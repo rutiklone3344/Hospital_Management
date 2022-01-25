@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Staff_page.css" />
+    <title>Health Care</title>
+  </head>
+  <body>
+    <div class="reg_page">
+      <div class="staff_sidebar">
+        <i class="fas fa-user-edit fa-5x"></i>
+        <h3>STAFF</h3>
+        <hr />
+        <h1>Patient Registration</h1>
+        <h1>Register Patient</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="title">Patient Registration</div>
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter Your Name" required />
+          </div>
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter Your username" required />
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter Your email" required />
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter Your Phone number" required />
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" placeholder="Enter Your Password" required />
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm password</span>
+            <input type="text" placeholder="confirm your password" required />
+          </div>
+          <div class="gender-details">
+              <h2 style="margin-top: 1%;">Gender</h2>
+            <input type="radio" id="dot" name="gender" value="male" />
+            <label for="Male">Male</label><br />
+            <input type="radio" id="dot" name="gender" value="female" />
+            <label for="Female">Female</label><br />
+            <input type="radio" id="dot" name="gender" value="other"/>
+            <label for="Other">Other</label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

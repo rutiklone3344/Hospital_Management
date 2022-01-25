@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="doctor_page.css" />
+    <title>Health Care</title>
+  </head>
+  <body>
+    <div class="reg_page">
+      <div class="staff_sidebar">
+        <i class="fas fa-user-edit fa-5x"></i>
+        <h3>Doctor</h3>
+        <hr />
+        <h1>Patient Details</h1>
+        <h1>Patient Graph</h1>
+      </div>
+    </div>
+
+
+
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="/img/Graph.jpg" style="width: 85%;
+      margin-left: 8%;
+      border-radius: 37px;">
+      <div class="text">Patient Name: Rutik Lone / Age: 21 / Dialysis</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="/img/grapg-3.png" style="width: 85%;
+      margin-left: 8%;
+      border-radius: 37px;">
+      <div class="text">Patient Name: Rutik Lone / Age: 21 / Heart</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="/img/graph-2.jpg" style="width: 85%;
+      margin-left: 8%;
+      border-radius: 37px;">
+      <div class="text">Patient Name: Rutik Lone / Age: 21 / </div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="    margin-top: 41%;
+  margin-left: 62%;
+  height: 10vh;
+  width: 5%;
+  position: absolute">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+
+
+  <script>
+      var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+  </script>
+  </body>
+</html>
